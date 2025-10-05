@@ -6,19 +6,23 @@ I'm currently constructing a website to fetch movie information from ANY music s
 ### The Website's Design
 The website is designed to be simple. Simply paste in a share link and press `enter` or **GO**. The website will do the rest.
 
-<div style="text-align: center;">
+The search bar looks like this:
+
+<p align="center" style="background-color: #1f1f1f;">
     <img alt="music to movie search bar" src="https://github.com/user-attachments/assets/990a0e7d-aa62-4e4d-873a-0fe201061801" />
-</div>
+</p>
 
 Movie information will be displayed like this:
-<div style="text-align: center;">
+
+<p align="center" style="background-color: #1f1f1f;">
     <img alt="movie info display example" src="https://github.com/user-attachments/assets/899936da-e0d6-4d0c-8925-069ca7c5a14f" />
-</div>
+</p>
 
 Errors will be displayed to the user here:
-<div style="text-align: center;">
-    <img alt="error bubble display example" src="https://github.com/user-attachments/assets/adb6e760-12b6-4c5d-9bab-41878f35eb13" />
-</div>
+
+<p align="center" style="background-color: #1f1f1f;">
+    <img alt="error bubble display example" src="https://github.com/user-attachments/assets/a302d677-68de-496a-875d-d6aee5c5ea64" />
+</p>
 
 ## What Does This Website Use?
 ### Odesli's Songlink
