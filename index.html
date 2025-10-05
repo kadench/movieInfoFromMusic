@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kaden Hansen">
+    <meta name="description" content="Do you wanna know what movie that music's from?">
+    <meta property="og:title" content="Music From Movie Finder">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This is a prototype song to movie finder.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://kadench.github.io/cse310/w1/index.html">
+    <meta name="twitter:card" content="Music From Movie Finder Logo">
+    <link rel="icon" type="image/png" href="images/favicon-48x48.png" sizes="48x48">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+    <link rel="stylesheet" href="main.css">
+    <title>Music From Movie Finder</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-content">
+        <header>
+            <nav>
+                <a href="index.html"><img id="mainLogo" src="images/favicon.svg" alt="main logo to home link"></a>
+            </nav>
+        </header>
+        <h1 id="title">Got a Score in Mind?</h1>
+        <p id="tagline">Find out what movie it's from!</p>
+        <form action="#" id="addressForm">
+            <div class="search-bar">
+                <input id="addressLink" type="text" name="search-box" placeholder="   Paste ANY streaming service share link here!">
+                <input id="findMovie" type="button" value="GO">
+            </div>
+        </form>
+        <p class="info">This site uses the Odesli's Songlink, iTunes, and MusicBrainz public API, but is not affiliated with any of these services.</p>
+    </div>
+    <div id="identifiedMovie">
+        <section id="trailer"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TQhRqtt-Fpo?si=D-4CCUzKOaTilSlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></section>
+        <section id="putInfoHere">
+
+        </section>
+        <section id="movieInfo">
+            <h2 id="movieTitle">The Polar Express</h2>
+            <h3 class="movie-seporator">--------------------------------------------------</h3>
+            <p id="movieInfo">Robert Zemeckis · 2004 · PG · 1h 40m</p>
+        </section>
+        <section id="feedback">
+            <h2>Oops!</h1>
+            <p id="sourceP">I see you've entered a <strong>Spotify</strong> link.</p>
+            <p id="feedbackP">Unfortunately, I cannot find enough metadata to give you the correct movie! Try another score.</p>
+        </section>
+    </div>
+    <footer> 
+        <p class="copyright">© Kaden Hansen 2025. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
