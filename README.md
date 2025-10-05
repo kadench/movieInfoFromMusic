@@ -6,39 +6,43 @@ I'm currently constructing a website to fetch movie information from ANY music s
 ### The Website's Design
 The website is designed to be simple. Simply paste in a share link and press `enter` or **GO**. The website will do the rest.
 
-<div style="text-align: center;">
-    <img alt="music to movie search bar" src="https://github.com/user-attachments/assets/990a0e7d-aa62-4e4d-873a-0fe201061801" />
-</div>
+The search bar looks like this:
+
+<p align="center">
+    <img alt="music to movie search bar" src="https://i.imgur.com/wltXuoC.png" />
+</p>
 
 Movie information will be displayed like this:
-<div style="text-align: center;">
-    <img alt="movie info display example" src="https://github.com/user-attachments/assets/899936da-e0d6-4d0c-8925-069ca7c5a14f" />
-</div>
+
+<p align="center">
+    <img alt="movie info display example" src="https://i.imgur.com/01cZCeh.png" />
+</p>
 
 Errors will be displayed to the user here:
-<div style="text-align: center;">
-    <img alt="error bubble display example" src="https://github.com/user-attachments/assets/adb6e760-12b6-4c5d-9bab-41878f35eb13" />
-</div>
+
+<p align="center">
+    <img alt="error bubble display example" src="https://i.imgur.com/G1WvWNH.png" />
+</p>
 
 ## What Does This Website Use?
 ### Odesli's Songlink
 Songlink is a service that allows you to share music with people who don't have the same service as you. It's designed to return all of the general song information (`artistName`, `title`, `ThumbnailUrl`, etc.) from any of the services below. This is public, no-key API with a max **10** fetches/min.
+<table align="center">
+    <tr><th>App Share Links Songlink Accepts:</th></tr>
+    <tr><td><a href="https://music.amazon.com">Amazon Music</a></td></tr>
+    <tr><td><a href="https://music.apple.com">Apple Music</a></td></tr>
+    <tr><td><a href="https://audius.co">Audius</a></td></tr>
+    <tr><td><a href="https://www.deezer.com">Deezer</a></td></tr>
+    <tr><td><a href="https://www.napster.com">Napster</a></td></tr>
+    <tr><td><a href="https://www.pandora.com">Pandora</a></td></tr>
+    <tr><td><a href="https://soundcloud.com">SoundCloud</a></td></tr>
+    <tr><td><a href="https://open.spotify.com">Spotify</a></td></tr>
+    <tr><td><a href="https://tidal.com">TIDAL</a></td></tr>
+    <tr><td><a href="https://music.yandex.com">Yandex Music</a></td></tr>
+    <tr><td><a href="https://music.youtube.com">YouTube Music</a></td></tr>
+</table>
 
-| App Share Links Songlink Accepts:                          | 
-|------------------------------------------------------------|
-| [Amazon Music](https://music.amazon.com)                   |
-| [Apple Music](https://music.apple.com)                     |
-| [Audius](https://audius.co)                                |
-| [Deezer](https://www.deezer.com)                           |
-| [Napster](https://www.napster.com)                         |
-| [Pandora](https://www.pandora.com)                         |
-| [SoundCloud](https://soundcloud.com)                       |
-| [Spotify](https://open.spotify.com)                        |
-| [TIDAL](https://tidal.com)                                 |
-| [Yandex Music](https://music.yandex.com)                   |
-| [YouTube Music](https://music.youtube.com)                 |
-
-**\*Not all songs are on each of these services.**
+<p align="center"><em>*Not all songs are on each of these services.*</em></p>
 
 ### How Does it Work?
 My current plan is to use [Odesli's Songlink™](www.notion.so/d0ebe08a5e304a55928405eb682f6741) to get `artistName` and `title` from its return. No movie information is fetched from this API (a snippet of a previous fetch I made is shown below; this should be enough to get the movie information):
@@ -59,7 +63,7 @@ My current plan is to use [Odesli's Songlink™](www.notion.so/d0ebe08a5e304a559
 ### MusicBrainz
 The above part works. However, my original plan to use [MusicBrainz](https://musicbrainz.org) does not. The API doesn't hold the information I need.
 
-### No Auth/Secret Public-only Goal
+### No Auth/Secret, Public-only Goal
 I'm attempting to avoid any service that uses **OAuth** or client secrets. If I get to a point where I absolutely can't move forward, I'll change my approach. I'm doing this because I find it's a hassle to require people to sign in or if I have to pay for API usage, especially for a demo. Most of the music or movie APIs I've seen (except ITunes API, MusicBrainz™ API, and WikiData apparently (haven't looked into it, but I plan too)) require some sort of OAuth, payment or secret to use.  
 
 
